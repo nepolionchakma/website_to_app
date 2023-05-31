@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/websiteLogo"
+        android:contentDescription="@string/app_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/websiteLogo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:id="@+id/appName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/appName"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:id="@+id/noInternetTextView"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/appName"/>
+
+</RelativeLayout>
